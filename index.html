@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/tic tac toe.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Yanone+Kaffeesatz&display=swap"
+        rel="stylesheet">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header">
+            <div class="wrap">
+                <h1 class="head__title">Крестики нолики</h1>
+                <div class="players">
+                    <div class="players_containers">
+                        <div class="players__container">
+                            <label for="player_1" class="head__name">Введите имя игрока</label>
+                            <input type="text" class="head__players" placeholder="Игрок 1">
+                        </div>
+                        <div class="players__container">
+                            <label for="player_2" class="head__name">Введите имя игрока</label>
+                            <input type="text" class="head__players" placeholder="Игрок 2">
+                        </div>
+                    </div>
+                    <div class="players__table">
+                        <div class="players__score">
+                            <span class="player__name"></span>
+                            <span class="player__point"></span>
+                        </div>
+                        <div class="players__score">
+                            <span class="player__name"> <b>X</b></span>
+                            <span class="player__point"> <b>O</b></span>
+                        </div>
+                    </div>
+                </div>
+                <button class="head__button">Старт</button>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="main_playGround">
+                <div id='item' class="main_playGround__item"></div>
+                <div id='item' class="main_playGround__item"></div>
+                <div id='item' class="main_playGround__item"></div>
+                <div id='item' class="main_playGround__item"></div>
+                <div id='item' class="main_playGround__item"></div>
+                <div id='item' class="main_playGround__item"></div>
+                <div id='item' class="main_playGround__item"></div>
+                <div id='item' class="main_playGround__item"></div>
+                <div id='item' class="main_playGround__item"></div>
+            </div>
+        </main>
+
+        <footer class="footer">
+
+        </footer>
+
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

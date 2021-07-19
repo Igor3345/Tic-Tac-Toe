@@ -1,0 +1,176 @@
+/* Variables */
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+b {
+  font-family: "Comfortaa", sans-serif;
+}
+
+.wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  letter-spacing: 2px;
+}
+
+.header {
+  background-color: #DDD4C1;
+  padding: 25px 0;
+}
+
+.header .head__title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.header .players {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .players .players_containers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.header .players .players_containers .players__container .head__name {
+  font-size: 24px;
+}
+
+.header .players .players_containers .players__container .head__players {
+  font-size: 24px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.header .players .players__table {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 25px;
+  font-size: 3.2vw;
+}
+
+.header .players .players__table .players__score {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .players .players__table .players__score .player__point {
+  font-size: 3vw;
+}
+
+.header .players .players__table .players__score:nth-child(2) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.header .head__button {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background: #90c0cc;
+  background: -webkit-gradient(linear, left top, right top, color-stop(33%, #90c0cc), color-stop(66%, #578e8b));
+  background: -o-linear-gradient(left, #90c0cc 33%, #578e8b 66%);
+  background: linear-gradient(90deg, #90c0cc 33%, #578e8b 66%);
+}
+
+.main .main_playGround {
+  width: 450px;
+  height: 450px;
+  background-color: #DDD5C2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .main_playGround .main_playGround__item {
+  width: 150px;
+  height: 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #000;
+  background-color: #fff;
+  font-family: "Comfortaa", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 100px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.main .main_playGround .main_playGround__item--win {
+  color: #E4A81A;
+  border: 2px solid #E4A81A;
+  background-color: #000;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
