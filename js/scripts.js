@@ -1,13 +1,25 @@
-const playGround = document.querySelector('.main_playGround');
-const player1Name = document.querySelectorAll('.head__players');
-const playCell = document.getElementsByClassName('main_playGround__item');
-const namesScore = document.querySelectorAll('.player__name');
-const pointsScore = document.querySelectorAll('.player__point');
-const names = [];
-const points = [];
-let start = false;
-let turns = 0;
 
+/**
+ * Элементы DOM дерева
+ */
+const playGround = document.querySelector('.main_playGround');  // Игровой стол
+const player1Name = document.querySelectorAll('.head__players');  // Поля ввода имен игроков
+const playCell = document.querySelectorAll('.main_playGround__item');  // Рабочие элементы "клетки" игрового стола
+const namesScore = document.querySelectorAll('.player__name');  // Поле отображения имени игрока
+const pointsScore = document.querySelectorAll('.player__point'); // Поле отображения баллов игрока
+
+/**
+ * Переменные для работы с данными
+ */
+const names = []; // Массив с введенными именами
+const points = []; // Массив с баллами игроков
+let start = false;  // Булево значение, отвечающее за возможность проведения игры
+let turns = 0;  // Счетчик ходов
+
+
+/**
+ * Функция начинающая / заканчивающая игру.
+ */
 document.querySelector('.head__button').onclick = (e) => {
     if (e.target.textContent == 'Старт') {
         e.target.textContent = 'Стоп';
@@ -47,6 +59,10 @@ document.querySelector('.head__button').onclick = (e) => {
     }
 }
 
+
+/**
+ * Фунция, ставящая крестики или нолики в клетках.
+ */
 playGround.onmouseup = (e) => {
     if (e.target.textContent == '' && start == true) {
         if (turns % 2 == 0) {
@@ -60,6 +76,10 @@ playGround.onmouseup = (e) => {
     }
 }
 
+
+/**
+ * Функция, проверяющая последовательность символов в клетках. Фиксирует победу одного из игроков или ничью.
+ */
 function check() {
     const win_cell = [
         [0, 1, 2],
@@ -95,6 +115,10 @@ function check() {
         return false;
     }
 }
+
+/**
+ * Фунция очищающая клетки игрового стола.
+ */
 function clear() {
     for (let i = 0; i < names.length; i++) {
         pointsScore[i].textContent = points[i]
